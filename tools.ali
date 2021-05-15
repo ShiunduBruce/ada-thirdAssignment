@@ -1,0 +1,104 @@
+V "GNAT Lib v2020"
+P ZX
+
+RN
+RV NO_IO
+RV NO_PROTECTED_TYPES
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_ELABORATION_CODE
+RV MAX_ENTRY_QUEUE_LENGTH=1+
+
+U tools%b		tools.adb		79a87c8f NE OO PK IL
+W ada%s			ada.ads			ada.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.discrete_random%s
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W system%s		system.ads		system.ali
+Z system.random_numbers%s  s-rannum.adb		s-rannum.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+
+U tools%s		tools.ads		5d71cd7d BN EE OO PF PK IL
+Z ada.tags%s		a-tags.adb		a-tags.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.tasking%s	s-taskin.adb		s-taskin.ali
+Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+
+D ada.ads		20200819050644 76789da1 ada%s
+D a-except.ads		20200819050644 a7106115 ada.exceptions%s
+D a-ioexce.ads		20200819050644 e4a01f64 ada.io_exceptions%s
+D a-numeri.ads		20200819050644 bb51c45a ada.numerics%s
+D a-nudira.ads		20200819050644 5984dff3 ada.numerics.discrete_random%s
+D a-nudira.adb		20200819050644 0bfd6ec4 ada.numerics.discrete_random%b
+D a-stream.ads		20200819050644 119b8fb3 ada.streams%s
+D a-tags.ads		20200819050644 edddc8f0 ada.tags%s
+D a-textio.ads		20200819050644 aef4d56d ada.text_io%s
+D a-unccon.ads		20200819050644 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20200819050646 5ab55268 interfaces%s
+D i-c.ads		20200819050646 c624fa43 interfaces.c%s
+D i-cstrin.ads		20200819050646 341d0ddf interfaces.c.strings%s
+D i-cstrea.ads		20200819050646 e53d8b8e interfaces.c_streams%s
+D system.ads		20200819050648 32a08138 system%s
+D s-atacco.ads		20200819050646 4c36d12f system.address_to_access_conversions%s
+D s-crtl.ads		20200819050646 0ebbdb71 system.crtl%s
+D s-exctab.ads		20200819050646 54135002 system.exception_table%s
+D s-ficobl.ads		20200819050646 078245e4 system.file_control_block%s
+D s-multip.ads		20200819050646 38ac9f73 system.multiprocessors%s
+D s-osinte.ads		20200819050642 97504df8 system.os_interface%s
+D s-parame.ads		20200819050648 4752c4cb system.parameters%s
+D s-rannum.ads		20200819050648 99ade2f2 system.random_numbers%s
+D s-secsta.ads		20200819050648 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20200819050648 a7318a92 system.soft_links%s
+D s-stache.ads		20200819050648 a37c21ec system.stack_checking%s
+D s-stausa.ads		20200819050648 017a0a05 system.stack_usage%s
+D s-stalib.ads		20200819050648 6b7a13f2 system.standard_library%s
+D s-stoele.ads		20200819050648 2dc34a04 system.storage_elements%s
+D s-tasinf.ads		20200819050642 601f6b72 system.task_info%s
+D s-taspri.ads		20200819050642 6c1d93d4 system.task_primitives%s
+D s-taskin.ads		20200819050642 88fba9ad system.tasking%s
+D s-taprob.ads		20200819050642 acd6094d system.tasking.protected_objects%s
+D s-traent.ads		20200819050648 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20200819050648 5ecf7212 system.unsigned_types%s
+D s-wchcon.ads		20200819050648 1b7d22d2 system.wch_con%s
+D s-win32.ads		20200819050648 15ac53fb system.win32%s
+D tools.ads		20210501194442 5d71cd7d tools%s
+D tools.adb		20210501194500 d3a9bb6c tools%b
+G a e
+G c Z s b [puts tools__output 4 17 none]
+G c Z s b [output__putsN tools 4 7 none]
+G c Z s b [output__putsP tools 4 7 none]
+G c Z s s [outputTVIP tools 3 4 none]
+X 1 ada.ads
+16K9*Ada 20e8 39|1r6 1r19 2r5 18r31
+X 4 a-numeri.ads
+16K13*Numerics 32e17 39|1r23 18r35
+X 5 a-nudira.ads
+44k22*Discrete_Random 81e33 39|1w32 18r44
+50R9 Generator<23|63R9> 39|25r28[18]
+52V13 Random{38|8E12} 39|31s32[18]
+61U14 Reset<23|100p14> 39|36s25[18]
+X 9 a-textio.ads
+57K13*Text_IO 727e16 39|1w10 2r9
+264U14*New_Line 39|11s12
+465U14*Put 39|9s10
+X 27 s-stausa.ads
+208U14*Initialize 209i<c,__gnat_stack_usage_initialize>22
+273U14*Output_Results 277i<c,__gnat_stack_usage_output_results>22
+X 38 tools.ads
+1K9*tools 14l5 14e10 39|4b14 48l5 48t10
+3w14*Output 39|6b19 14l8 14t14
+4U17 Puts 4>22 4>35 39|7b17 13t10
+4a22 str{string} 39|7b22 9r14
+4i35 num{natural} 39|7b35 10r13
+8E12 T 11r36 39|18r60 21r37 29r37 40r33
+9k12*Random_Generator 8z12 12l8 12e24 39|17b17 47l8 47t24
+11V19*GetRandom{8E12} 39|40b16 43l11 43t20
+X 39 tools.adb
+18K15 Gen_Pack[5|44] 25r19 31r23 36r16
+20w20 Generator 28b25 38l14 38t23 42r17 46r7
+21V22 GetRand{38|8E12} 29b22 32l17 32t24 42s27
+22U23 Init 34b23 37l17 37t21 46s17
+25r16 g{5|50R9[18]} 31r39 36r31
+
